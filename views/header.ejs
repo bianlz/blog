@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
-<h1><%=title%></h1>
+    <h1><%=title%></h1>
 </header>
 <span><form method="get" action="/search" ><input type="text" placeholder="search" name="keyword" class="search"/></form></span>
 <nav>
@@ -25,9 +25,9 @@
     <% } %>
 </nav>
 <article>
-<% if (success) { %>
-<div><%= success %></div>
-<% } %>
-<% if (error) { %>
-<div><%= error %></div>
+    <% if (success) { %>
+    <div><%= success %></div>
+    <% } %>
+    <% if (error) { %>
+    <div><%= error %></div>
 <% } %>
