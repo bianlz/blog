@@ -179,7 +179,7 @@ Post.remove=function(name,day,title,callback){
                 db.close();
                 return callback(err);
             }
-            collection.fineOne({
+            collection.findOne({
                 "name":name,
                 "time.day":day,
                 "title":title
